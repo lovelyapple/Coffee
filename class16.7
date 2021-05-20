@@ -11,7 +11,7 @@ void Hack()
 	{
 		if (i % 100000000 == 0)
 		{
-			system("cls");
+			//system("cls"); 我的环境里不支持这个CLS 所以只能删掉
 			std::cout << "\n■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n";
 			std::cout << "\n 你的系统已经被我们拿下! hacked by 黑兔档案局:[ID:000001 ]\n";
 			std::cout << "\n              加群:868267304 解除\n";
@@ -55,7 +55,8 @@ int count()
 int main()
 {
 	std::cout << "======= 驴百万学院 学员总年龄统计计算系统 =====\n";
-	std::cout << "\n                API:"<<Hack<<std::endl;
+	std::cout << "\n                API:";
+	Hack();
 	std::cout << "\n[说明:最多输入10个学员的信息,当输入0时代表输入结束]\n\n";
 	std::cout << "\n驴百万学院的学员总年龄为:" << count();
 }
